@@ -2,6 +2,7 @@
 import { Either, right } from '@/core/either';
 import { UniqueEntityId } from '@/core/entities/unique-entity-id';
 import { Question } from '../../enterprise/entities/question';
+import { QuestionAttachmentList } from '../../enterprise/entities/question-attachemnt-list';
 import { QuestionAttachment } from '../../enterprise/entities/question-attachment';
 import { QuestionsRepository } from '../repositories/questions-repository';
 
@@ -39,7 +40,7 @@ export class CreateQuestionUseCase {
       })
     })
 
-    question.attachments = questionAttachments
+    question.attachments = new QuestionAttachmentList(questionAttachments)
 
     await this.questionRepository.create(question)
 

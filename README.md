@@ -13,28 +13,6 @@ Este projeto foi criado para exemplificar como o DDD e a Clean Architecture pode
 -   **Clean Architecture:** Separação da aplicação em camadas distintas, promovendo independência de tecnologia, facilidade de manutenção e escalabilidade.
 -   **Node.js e TypeScript:** Linguagens que garantem desempenho e qualidade de código.
 
-## 📂 Estrutura do Projeto
-
-bash
-
-Copiar código
-
-`src/
-├── domain/
-│   ├── entities/
-│   ├── valueObjects/
-│   ├── events/
-│   ├── repositories/
-├── application/
-│   ├── useCases/
-│   ├── services/
-├── infrastructure/
-│   ├── database/
-│   ├── http/
-│   ├── repositories/
-└── interfaces/
-    ├── controllers/
-    ├── routes/` 
 
 ## 🛠️ Tecnologias Utilizadas
 
